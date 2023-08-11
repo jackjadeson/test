@@ -127,15 +127,115 @@ else:
 # below.
 def visualise_data(rename_me_in_task_1b):
 
-    title('Superman vs Batman')
+    title('Ice vs Fire')
+    goto(-1.5 * cell_size, 0) 
+    right(180)
+    forward(cell_size//2.5)
+    right(90)
+    forward(cell_size//10)
+    right(90)
+
+    color('white')
+    down()
+    begin_fill()
+    
+    for _ in range(4):
+
+        forward(37.5)
+        right(90)
+    color('lightblue')
+    end_fill()
+    begin_fill()
+    color('white')
+    forward(37.5)
+    left(45)
+    forward(26.25)
+    left(135)
+    forward(37.5)
+    left(45)
+    forward(26.25)
+    left(135)
+    forward(37.5)
+    right(90)
+    forward(37.5)
+    left(135)
+    forward(26.25)
+    left(45)
+    forward(37.5)
+    color('lightblue')
+    end_fill()
+
+#Shading
+
     penup()
-    left(180)
-    forward(100)
-    pendown()
-    color('red')
-    pendown()
-    circle(20)
+    right(90)
+    color('white')  # Highlight color
+    goto(-1.5 * cell_size + 10, 0)
+    begin_fill()
+    setheading(45)
+    forward(26.25)
+    right(135)
+    forward(10)
+    right(45)
+    forward(10)
+    end_fill()
+
+    
+    
+#Draw second ice cube
+    
+    left(45)
+    forward(cell_size//2.5)
+    right(90)
+    forward(cell_size//10)
+    right(90)
+
+    color('white')
+    down()
+    begin_fill()
     penup()
+
+    goto(-6.5 * cell_size, 0)
+    pendown()
+    for _ in range(4):
+    
+        forward(37.5*2)
+        right(90)
+    color('lightblue')
+    end_fill()
+    begin_fill()
+    color('white')
+    forward(37.5*2)
+    left(45)
+    forward(26.25*2)
+    left(135)
+    forward(37.5*2)
+    left(45)
+    forward(26.25*2)
+    left(135)
+    forward(37.5*2)
+    right(90)
+    forward(37.5)
+    left(135)
+    forward(26.25*2)
+    left(45)
+    forward(37.5*2)
+    color('lightblue')
+    end_fill()
+
+#Shading
+
+    penup()
+    color('white')  # Highlight color
+    goto(-6.5 * cell_size + 10, 0)
+    begin_fill()
+    setheading(45)
+    forward(26.25*2)
+    right(135)
+    forward(10*2)
+    right(45)
+    forward(10*2)
+    end_fill()
 
 
 #
